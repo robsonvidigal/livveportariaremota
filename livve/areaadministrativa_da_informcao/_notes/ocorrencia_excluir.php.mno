@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_deletar" value="name:id;datatype:int,name:horario;datatype:time,name:operador;datatype:string,name:rd;datatype:string,name:assunto;datatype:string,name:assunto2;datatype:string,name:informacao;datatype:blob,name:controlador;datatype:string,name:supervisor;datatype:string,name:dia;datatype:string" />
+</info>

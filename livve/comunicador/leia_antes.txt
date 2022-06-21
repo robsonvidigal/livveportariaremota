@@ -1,0 +1,34 @@
+   Chat em ajax X-Chat
+   Autor do Chat: Hedi Carlos Minin
+   http://www.xlinkweb.com.br
+
+  Esta versão: chat x-chat em ajax versão xq 1.0
+  Mexido pela EquipeXQ
+  Demonstração e download em: http://guia.xq.com.br/chat2/
+  
+  Atenção, este Leia-me não é oficial do autor colocamos apenas 
+  para orientação uma vez que mudamos alguns detalhes do codigo.
+  
+  MUDANÇAS REALIZADAS:
+  
+  -Criação de menu Dropdown de exemplo (editavel no arquivo principal.php)
+  -Criação de sistema de estilos para mudança no design por parte do usuario
+  (para novos, basta criar o arquivo css e inserir a opção no menu do 
+  arquivo principal.php)
+  -Acerto nas mensagens de reservado e publico.
+  -Inclusão de thumbnail no momento do envio da imagem.
+  
+  INSTALAÇÃO:
+  
+  -Descompacte o arquivo zipado.
+  -Crie um banco e atribua um usuário para ele.
+  -Abra o arquivo class.mysql.php e edite os dados da conexão com o banco
+  -Abra o arquivo deletarimg.php e edite o caminho para a pasta img_enviada 
+  (este arquivo é responsável por apagar as imagens velhas da pasta)
+  -Crie uma pasta de nome qualquer e envie os arquivos para ela.
+  -Acesse o arquivo de criação das tabelas: http://www.site.com.br/chat/criardb.php
+  -Confira no banco se as tabelas foram criadas e apague o arquivo criardb.php
+  -Acesse o seu novo chat: http://www.site.com.br/chat/
+  
+  
+  

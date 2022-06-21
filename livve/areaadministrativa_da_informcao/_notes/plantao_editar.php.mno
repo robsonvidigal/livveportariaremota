@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_editar" value="name:id;datatype:int,name:diadata;datatype:string,name:supervisor;datatype:string,name:turnoinicio;datatype:string,name:turnofim;datatype:string,name:bkp;datatype:string" />
+</info>

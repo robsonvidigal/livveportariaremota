@@ -1,0 +1,112 @@
+.borda {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	border: 1px solid #FFCCCC;
+}
+.form {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	border: 1px solid #CCCCCC;
+}
+.formbranco {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #EA4040;
+	border: 1px solid #DDDDDD;
+	background-color: #FAF0F0;
+}
+.texto11 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	background-color: #FFFFFF;
+}
+.formfundobranco {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	border: 1px solid #FFFFFF;
+}
+.bordaint {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	border: 1px solid #999999;
+}
+a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+}
+a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: underline;
+}
+body {
+	scrollbar-shadow-color: #FFFFFF; 
+	scrollbar-face-color: #FFFFFF; 
+	scrollbar-3dlight-color: #CCCCCC; 
+	scrollbar-highlight-color: #FFFFFF;
+	scrollbar-darkshadow-color: #CCCCCC;
+	scrollbar-track-color: #FFFFFF;
+	scrollbar-arrow-color: #CCCCCC;
+          BACKGROUND-IMAGE: url(icones/bgsaara.gif)
+}
+
+.topo {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	background-color: #FFFFFF;
+}
+.online {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	background-color: #FFFFFF;
+}
+.chat {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	border: 1px solid #FFCCCC;
+	background-color: #FFFFFF;	
+}
+
+.inferior {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	border: 1px solid #FFCCCC;
+	background-color: #FFFFFF;	
+}
+
+.separador {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	border: 1px dashed #EEEEEE;
+	background-color: #FFFFFF;	
+	padding: 2px;
+}
+.reservado {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	border: 1px dashed #FF0000;
+	background-color: #FFFFFF;
+	padding: 2px;
+}
+.publico {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	border: 1px solid #FFFFFF;
+	background-color: #FFFFFF;
+	padding: 2px;
+}
