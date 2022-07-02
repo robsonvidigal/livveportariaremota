@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<info>
-	<infoitem key="UD_tb_cois" value="name:id;datatype:int,name:distrito;datatype:string" />
-	<infoitem key="UD_tb_cidades_1" value="name:id;datatype:int,name:id_distrito;datatype:int,name:cidade;datatype:string" />
-	<infoitem key="UD_tb_cidades_9" value="name:id;datatype:int,name:id_distrito;datatype:int,name:cidade;datatype:string" />
-	<infoitem key="UD_tb_cidades_10" value="name:id;datatype:int,name:id_distrito;datatype:int,name:cidade;datatype:string" />
-</info>

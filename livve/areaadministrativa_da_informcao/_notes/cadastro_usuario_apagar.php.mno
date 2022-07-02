@@ -1,4 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<info>
-	<infoitem key="UD_apagar_ususario" value="name:nome;datatype:string,name:id;datatype:int,name:matricula;datatype:string,name:login;datatype:string,name:senha;datatype:string,name:nivel;datatype:string,name:inicio;datatype:string,name:fim;datatype:string,name:supervisor;datatype:string" />
-</info>

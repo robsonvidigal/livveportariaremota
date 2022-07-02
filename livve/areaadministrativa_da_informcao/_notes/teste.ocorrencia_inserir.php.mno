@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<info>
-	<infoitem key="UD_plantao" value="name:id;datatype:int,name:diadata;datatype:string,name:supervisor;datatype:string,name:turnoinicio;datatype:string,name:turnofim;datatype:string,name:bkp;datatype:string" />
-	<infoitem key="UD_usuarios" value="name:nome;datatype:string,name:id;datatype:int,name:matricula;datatype:string,name:login;datatype:string,name:senha;datatype:string,name:nivel;datatype:string,name:inicio;datatype:string,name:fim;datatype:string,name:supervisor;datatype:string" />
-	<infoitem key="UD_in_ocorrencias" value="name:id;datatype:int,name:horario;datatype:time,name:operador;datatype:string,name:rd;datatype:string,name:assunto;datatype:string,name:assunto2;datatype:string,name:informacao;datatype:blob,name:controlador;datatype:string,name:supervisor;datatype:string,name:dia;datatype:string" />
-</info>

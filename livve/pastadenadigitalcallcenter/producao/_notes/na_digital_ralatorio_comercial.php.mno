@@ -1,4 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<info>
-	<infoitem key="UD_agendamento" value="name:id;datatype:int,name:nome_ser;datatype:string,name:tipo;datatype:int" />
-</info>

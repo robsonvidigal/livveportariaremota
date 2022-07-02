@@ -1,4 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<info>
-	<infoitem key="UD_atua_os" value="name:id;datatype:int,name:os_nub;datatype:string,name:pa;datatype:string,name:hora;datatype:string,name:data;datatype:string,name:soma;datatype:int,name:situacao;datatype:string" />
-</info>

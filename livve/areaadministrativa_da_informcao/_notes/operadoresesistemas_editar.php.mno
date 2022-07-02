@@ -1,4 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<info>
-	<infoitem key="UD_editar_operadores" value="name:id;datatype:int,name:arapiraca;datatype:string,name:penedo;datatype:string,name:palmeira;datatype:string,name:santana;datatype:string,name:delmiro;datatype:string,name:saomiguel;datatype:string,name:riolargo;datatype:string,name:uniao;datatype:string,name:matriz;datatype:string,name:maceio;datatype:string,name:ajuriar;datatype:string,name:ajuripe;datatype:string,name:ajuripa;datatype:string,name:ajurisa;datatype:string,name:ajuride;datatype:string,name:ajurims;datatype:string,name:ajuriri;datatype:string,name:ajuriun;datatype:string,name:ajurima;datatype:string,name:ajurimc;datatype:string,name:cidar;datatype:string,name:cidpe;datatype:string,name:cidpa;datatype:string,name:cidsa;datatype:string,name:cidde;datatype:string,name:cidsm;datatype:string,name:cidri;datatype:string,name:cidun;datatype:string,name:cidma;datatype:string,name:cidmc;datatype:string" />
-</info>
