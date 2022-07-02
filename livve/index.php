@@ -36,7 +36,7 @@
 		</div>
         
 		<div id="conteudo">
-            <h3>Teste... <br>Teste... <br>Teste... <br>Teste... <br>Teste... <br>Teste... <br></h3>
+            
         </div>
         
     </div>	
