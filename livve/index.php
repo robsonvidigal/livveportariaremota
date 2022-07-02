@@ -36,11 +36,12 @@
 		</div>
         
 		<div id="conteudo">
-            
+            <div id="hms" class="hora" onload="showTime()"></div>
         </div>
         
     </div>	
 	
 	<script src="javascript/funcoes.js"></script>
+	<script src="javascript/relogio.js"></script>
 </body>
 </html>
