@@ -27,8 +27,15 @@
 	</header>
 	
 	<div id="conteudogeral">
-        <h2>BOLETIM OPERACIONAL</h2> 
-        <div id="conteudo">
+		<div class="fundotitulo">
+        	<h2>BOLETIM OPERACIONAL</h2>
+		
+			<div class="logo2">
+				<img src="img/logo_pq_branco.png" alt="Livve Portaria Remota">
+			</div> 
+		</div>
+        
+		<div id="conteudo">
             <h3>Teste... <br>Teste... <br>Teste... <br>Teste... <br>Teste... <br>Teste... <br></h3>
         </div>
         

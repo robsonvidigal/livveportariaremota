@@ -50,23 +50,40 @@ a:hover {
 /* Estrutura do conteudo */
 
 #conteudogeral {
-  width: 95%;
-  margin-top: 10px;
-  margin-left: 2.5%;
-  border-radius: 10px;
-  background-color: aqua;
-  
+  width: 96%;
+  margin-top: 5px;
+  margin-left: 3%;
+  float: left;
+}
+
+.fundotitulo {
+  width: 96%;
+  height: 60px;
+  padding: 0.5rem;
+  background-color: #07528c;
+  border-radius: 10px 10px 0px 0px;
+  float: left;
 }
 
 #conteudogeral h2 {
-  margin: 10px;
-  margin-left: 5px;
+  width: 75%;
+  height: 1rem;
+  color: beige;
   text-decoration: none;
   font-family: sans-serif;
+  float: left;
+}
+
+.logo2 {
+  width: 10%;
+  float: left;
+  display: flex;
 }
 
 #conteudo {
-  background-color: blue;
+  width: 98%;
+  background-color: rgb(239, 239, 250);
+  float: left;
 }
 
 /* Estrutura body mobile*/
