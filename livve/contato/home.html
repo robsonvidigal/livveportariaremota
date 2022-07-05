@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Boletim - Livve Portária</title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<script type="text/javascript" src="../javascript/ajax.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+<body>
+	
+	<header id="header">
+		
+		<div class="logo">
+			<img src="../img/logo_pq.png" alt="Logo Boletim Opeacional">
+		</div>
+		<nav id="nav">
+			<button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+        <sapn id="hamburger"></sapn>
+      </button>
+			<ul id="menu" role="menu">
+				<li><a href="../index.html">Inicio</a></li>
+                <li><a href="home.html">Contato</a></li>
+				<li><a href="">N.A. Open</a></li>
+				<li><a href="">N.A. Consulta</a></li>
+				<li><a href="">Administrativo</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div id="conteudogeral">
+		<div class="fundotitulo">
+        			
+			<div class="logo2">
+				<img src="../img/logo_livve_pq.png" alt="Livve Portaria Remota">
+			</div> 
+
+            <div class="logo3">
+                <img src="../img/logo_century_pq.png" alt="Century Seguraça Eletrônica">
+            </div>
+		
+		</div>
+        
+		<div id="conteudo">
+            <div id="hms" class="hora" onload="showTime()"></div>
+
+			
+			<div id="Container">
+				<hr/>
+
+				<h2>Pesquisa Contato</h2>
+				<div id="Pesquisar">
+					Informe o nome:
+					<input type="text" name="textnome" id="txtnome"/>
+					<input type="button" name="btnPesquisar" value="Pesquisar" onclick="getDados();"/>	
+				</div>
+				<hr/>
+
+				<h2>Resultado da pesquisa:</h2>
+				<div id="Resultado"></div>
+				<hr>
+			</div>        
+			
+		
+		</div>
+        
+    </div>	
+	
+	<script src="../javascript/funcoes.js"></script>
+	<script src="../javascript/relogio.js"></script>
+</body>
+</html>

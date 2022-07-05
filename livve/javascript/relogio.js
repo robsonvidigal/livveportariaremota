@@ -31,7 +31,7 @@
             agora = new Date ();
 
 
-    var time = "hora: " + hora + ":" + minuto + ":" + segundo + " " + session + " / " + diaNome[agora.getDay()] + ", " + agora.getDate() + " de " + mesNome[agora.getMonth()] + " de " + agora.getFullYear();
+    var time = hora + ":" + minuto + ":" + segundo + " " + session + " / " + diaNome[agora.getDay()] + ", " + agora.getDate() + " de " + mesNome[agora.getMonth()] + " de " + agora.getFullYear();
     document.getElementById("hms").innerHTML = time;
     document.getElementById("hms").textContent = time;
 
