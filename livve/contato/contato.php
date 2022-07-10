@@ -1,16 +1,10 @@
+<?php require_once('../connect/conexao.php'); ?>
 <?php
 
 //Verifica se existe a variável txtnome
 if (isset($_GET["txtnome"])) {
     $nome = $_GET["txtnome"];
-
-    //Conexão com banco de dados
-    $server = "localhost";
-    $user = "root";
-    $senha = "callmaceio2012";
-    $base = "db_boletim";
-    $conexao = mysql_connect($server, $user, $senha) or die("Erro de conexão!");
-    mysql_select_db($base);
+    
     //Verifica se a variável está vazia
     if (empty($nome)){
         $sql = "SELECT * FROM contato";
@@ -20,17 +14,17 @@ if (isset($_GET["txtnome"])) {
     }
     sleep(1);
     $result = mysql_query($sql);
-    $cont = mysql_affected_rows($conexao);
+    $cont = mysql_affected_rows($db_boletim);
     //Verifica se a consulta retornou linhas
     if ($cont > 0) {
         //Atribui o código HTML para montar uma tabela
         $tabela = "<table border='1'>
                     <thead>
                         <tr>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                            <th></th>
+                            <th>NOME</th>
+                            <th>TELEFONE</th>
+                            <th>CELULAR</th>
+                            <th>EMAIL</th>
                         </tr>
                     </thead>
                     <tbody>

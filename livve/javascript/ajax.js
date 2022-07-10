@@ -1,6 +1,6 @@
 /* Função para criar um objeto XMLHTTPRequest */
 
-function CriaRequest ();{
+function CriaRequest () {
     try{
         request = new XMLHttpRequest();
     }catch (IEAtual){
@@ -8,6 +8,7 @@ function CriaRequest ();{
         try{
             request = new ActiveXObject("Msxml2.XMLHTTP");            
         }catch(IEAntigo){
+
             try{
                 request = new ActiveXObject("Microsoft.XMLHTTP");
             }catch(falha){
@@ -27,25 +28,30 @@ function CriaRequest ();{
 function getDados() {
 
     //Declaração de Variáveis
-    var nome = document.getElementById("txtnome").ariaValueMax;
+    var nome = document.getElementById("txtnome").value;
     var result = document.getElementById("Resultado");
     var xmlreq = CriaRequest();
 
     //Exibi a image do progresso
-    result.innerHTML = '<img src="gif/progresso1.gif">';
+    result.innerHTML = '<img src="../gif/progresso1.gif">';
 
     //Iniciar uma requisição
-    xmlreq.open("GET", "contato/contato.php?txtnome=" + nome, true);
+    xmlreq.open("GET", "contato.php?txtnome=" + nome, true);
 
     //Atribui uma função para ser executada sempre que houver uma mudança de ado
-    xmlreq.onreadystatechange = function(){
+    xmlreq.onreadystatechange = function() {
 
         //Verifica se foi concluído com sucesso e a conexão fechada (readyState=4)
-        if (xmlreq.status == 200){
-            result.innerHTML = xmlreq.responseText;
-        }else{
-            result.innerHTML = "Erro " + xmlreq.statusText;
+        if (xmlreq.readyState == 4) {
+
+            //Verifica se o arquivo foi encontrado com sucesso
+            if (xmlreq.status == 200) {
+                result.innerHTML = xmlreq.responseText;
+            }else{
+                result.innerHTML = "Erro " + xmlreq.statusText;
+            }
         }
-    }
+    };
+    xmlreq.send(null);
+
 }
-xmlreq.send(null);
