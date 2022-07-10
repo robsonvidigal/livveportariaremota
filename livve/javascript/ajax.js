@@ -36,7 +36,7 @@ function getDados() {
     result.innerHTML = '<img src="../gif/progresso1.gif">';
 
     //Iniciar uma requisição
-    xmlreq.open("GET", "contato.php?txtnome=" + nome, true);
+    xmlreq.open("GET", `contato.php?txtnome=${nome}`, true);
 
     //Atribui uma função para ser executada sempre que houver uma mudança de ado
     xmlreq.onreadystatechange = function() {

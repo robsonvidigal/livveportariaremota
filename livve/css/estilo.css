@@ -20,6 +20,14 @@ a:hover {
 
 }
 
+#menugeral {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+}
+
 #header {
 	box-sizing: border-box;
 	height: 70px;
@@ -41,21 +49,24 @@ a:hover {
 	padding: .5rem;
 }
 
+
 /* Animação do menu */
 
 #btn-mobile {
 	display: none;
 }
 
+
+
 /* Estrutura do conteudo */
 
-#conteudogeral {
+#cont_ge_menu {
   width: 100%;
   margin-top: 0px;
   float: left;
 }
 
-.fundotitulo {
+.fundo_titulo_menu {
   width: 100%;
   height: 60px;
   padding: 3px 20px;
@@ -68,19 +79,19 @@ a:hover {
 
 /* Estrutura das logos */
 
-.logo2 {
+.menu_logo2 {
   width: 10%;
   margin-top: -1px;
   float: left;
 }
 
-.logo3 {
+.menu_logo3 {
   width: 10%;
   margin-top: -3px;
   float: left;
 }
 
-#conteudo {
+#relogio_menu {
   width: 100%;
   padding: 3px;
   background-color: rgb(239, 239, 250);
@@ -100,8 +111,51 @@ a:hover {
   font-family: sans-serif;
 }
 
+/* Estrutura da página prcincipal */
 
+#conteudogeraldapagina {
+  width: 100%;
+  margin-top: 0px;
+  float: left;
+}
 
+#configuracaopg {
+  width: 95%;
+  background-color: #db1717;
+  margin-top: 12.5%;
+  float: left;
+  margin-left: 2.5%;
+  color: rgb(14, 44, 71);
+  border-radius: 10px;
+}
+
+/* Estrutura do container_info*/
+
+.container_infor {
+  margin: auto;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-top: 12.5%;
+  background-color: #07528c;
+  padding: 10px;
+}
+
+#sessao {
+  width: 75%;
+  height: 500px;
+  margin-left: 2.5%;
+  float: left;
+  background-color: rgb(164, 167, 166);  
+}
+
+#navtwo {
+  width: 20%;
+  height: 500px;
+  background-color: #444;
+  float: left;
+  margin-left: 10px;
+  border-radius: 10px 10px 0px 0px;
+}
 
 
 
@@ -167,4 +221,13 @@ a:hover {
     transform: rotate(-135deg);
      top: -7px;
   }
+
+  #menugeral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+  }
+
 }
