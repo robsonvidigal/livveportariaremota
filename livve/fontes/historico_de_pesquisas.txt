@@ -1,11 +1,13 @@
 
 
-Nota de Agradecimentos para os desenvolvedores que disponibilizaram os links abaixo para compartilhar os conhecimentos. 
+Nota de Agradecimentos para os desenvolvedores que disponibilizaram os links abaixo para compartilhar os seus conhecimentos. 
 
-Desevolvimento realizado em parceria das fontes de pesquisas:
+Desevolvimento realizado em parceria com as fontes de pesquisas:
 
 //Créditos code Hora: Feature Code - data: 02/07/2022
 //font: https://github.com/tluis9/relogioWeb
 //      https://www.youtube.com/watch?v=O2t1brzQ6NE
 //Créditos code Data: devmedia - data: 03/07/2022
 //font: https://www.devmedia.com.br/date-javascript-trabalhando-com-data-e-hora-em-js/37222
+//Créditos para criação de cadastro em PHP e MySQL - data 10/07/2022
+//font: https://www.youtube.com/c/FSNCursosOnline

@@ -1,4 +1,4 @@
-<?php require_once('../connect/conexao.php'); ?>
+<?php require_once('../connect/connection.php'); ?>
 <?php
 
 //Verifica se existe a variável txtnome
@@ -14,7 +14,7 @@ if (isset($_GET["txtnome"])) {
     }
     sleep(1);
     $result = mysql_query($sql);
-    $cont = mysql_affected_rows($db_boletim);
+    $cont = mysqli_affected_rows($conexao);
     //Verifica se a consulta retornou linhas
     if ($cont > 0) {
         //Atribui o código HTML para montar uma tabela

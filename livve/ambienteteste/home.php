@@ -68,13 +68,21 @@
 				<form method="post" action="processar.php">
 					<input type="submit" value="Salvar" class="btn-post">
 					<input type="reset" value="Limpar" class="btn-post">
+					<br><br>
+
+					Nome:<br>
+					<input type="text" name="nome" class="campo" maxlength="40" required autofocus><br>
+					E-mail:<br>
+					<input type="email" name="email" class="campo" maxlength="50" required><br>
+					Profissão:<br>
+					<input type="text" name="profissao" class="campo" maxlength="40" required><br>
 				</form>
 			</section>
 
 			<nav id="navtwo">
 				<ul class="menutwo">
-					<li>Cadastro</li>
-					<li>Consultas</li>
+					<a href="index.php"><li>Cadastro</li></a>
+					<a href="consulta.php"><li>Consultas</li></a>
 				</ul>
 			</nav>
 			

@@ -121,7 +121,7 @@ a:hover {
 
 #configuracaopg {
   width: 95%;
-  background-color: #db1717;
+  background-color: #614242;
   margin-top: 12.5%;
   float: left;
   margin-left: 2.5%;
@@ -145,7 +145,10 @@ a:hover {
   height: 500px;
   margin-left: 2.5%;
   float: left;
-  background-color: rgb(164, 167, 166);  
+  background-color: rgb(164, 167, 166); 
+  font-family: sans-serif; 
+  box-sizing: border-box;
+  padding-left: 10px;
 }
 
 #navtwo {
@@ -155,6 +158,43 @@ a:hover {
   float: left;
   margin-left: 10px;
   border-radius: 10px 10px 0px 0px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+ul.menutwo {
+  list-style-type: none;
+  font-family: sans-serif;
+}
+
+ul.menutwo li {
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #777;
+  color: #fff;
+  margin-top: 5px;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+
+.btn-post {
+  width: 100px;
+  height: 30px;
+  background-color: #2a578b;
+  border: 1px solid #ddd;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.campo {
+  width: 300px;
+  height: 30px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 
