@@ -65,7 +65,7 @@
 				<h1>Cadastro de Usúarios</h1>
 				<hr><br><br>
 
-				<form method="post" action="processar.php">
+				<form method="post" action="processa.php">
 					<input type="submit" value="Salvar" class="btn-post">
 					<input type="reset" value="Limpar" class="btn-post">
 					<br><br>
@@ -74,14 +74,14 @@
 					<input type="text" name="nome" class="campo" maxlength="40" required autofocus><br>
 					E-mail:<br>
 					<input type="email" name="email" class="campo" maxlength="50" required><br>
-					Profissão:<br>
-					<input type="text" name="profissao" class="campo" maxlength="40" required><br>
+					Sexo:<br>
+					<input type="text" name="sexo" class="campo" maxlength="10" required><br>
 				</form>
 			</section>
 
 			<nav id="navtwo">
 				<ul class="menutwo">
-					<a href="index.php"><li>Cadastro</li></a>
+					<a href="home.php"><li>Cadastro</li></a>
 					<a href="consulta.php"><li>Consultas</li></a>
 				</ul>
 			</nav>

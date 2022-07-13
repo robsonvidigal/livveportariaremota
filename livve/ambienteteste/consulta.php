@@ -2,20 +2,10 @@
 
     include_once("../connect/connection.php");
 
-    //Recebendo dados da index atraves do comando POST
-    $nome = $_POST['nome'];
-    $email = $_POST['email'];
-    $sexo = $_POST['sexo'];
-
-    //Armazenando comando SQL
-    $sql = "INSERT INTO usuarios (nome, email, sexo) values ('$nome', '$email', '$sexo')";
-
-    //Salvando dados
-    $salvar = mysqli_query($conexao, $sql);
-
-    //Confirmação de cadastro ou dublicidade de cadastro (email)
-
-    $linhas = mysqli_affected_rows($conexao);
+    //Consulta
+    $sql = "SELECT * FROM usuarios";
+    $consulta = mysqli_query($conexao, $sql);
+    $registros = mysqli_num_rows($consulta);
 
     mysqli_close($conexao);
 ?>
@@ -84,16 +74,12 @@
 		<div class="container_infor">
 
 			<section id="sessao">
-				<h1>Confirmação de Cadastro</h1>
+				<h1>Consultas</h1>
 				<hr><br><br>
 
                 <?php 
 
-                    if($linhas == 1) {
-                        echo "Cadastro efetuado com sucesso!";
-                    }else{
-                        echo "Cadastro NÃO efetuado.<br>Já existe um usuário com esté e-mail!";
-                    }
+                    echo "$registros registros encontrados.";
 
                 ?>
 				
