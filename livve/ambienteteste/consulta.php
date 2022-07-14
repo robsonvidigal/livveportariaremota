@@ -7,7 +7,6 @@
     $consulta = mysqli_query($conexao, $sql);
     $registros = mysqli_num_rows($consulta);
 
-    mysqli_close($conexao);
 ?>
 
 <!DOCTYPE html>
@@ -75,12 +74,40 @@
 
 			<section id="sessao">
 				<h1>Consultas</h1>
-				<hr><br><br>
+				<hr><br>
+
+				<form method="get" action="">
+					Filtrar por profissão: <input type="text" name="filtro" class="campo" required autofocus>
+					<input type="submit" value="Pesquisar" class="btn-post">
+
+				</form><br>
 
                 <?php 
 
                     echo "$registros registros encontrados.";
 
+					echo "<br><br>";
+
+					while($exibirRegistros = mysqli_fetch_array($consulta)){
+
+						$id = $exibirRegistros[0];
+						$nome = $exibirRegistros[1];
+						$email = $exibirRegistros[2];
+						$sexo = $exibirRegistros[3];
+
+						echo "<article class='article'>";
+
+							echo "$id<br>";
+							echo "$nome<br>";
+							echo "$email<br>";
+							echo "$sexo";
+
+
+						echo "</article>";
+
+					}
+
+					mysqli_close($conexao);
                 ?>
 				
 			</section>

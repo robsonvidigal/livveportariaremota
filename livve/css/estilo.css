@@ -142,13 +142,14 @@ a:hover {
 
 #sessao {
   width: 75%;
-  height: 500px;
+  height: 100%;
   margin-left: 2.5%;
   float: left;
   background-color: rgb(164, 167, 166); 
   font-family: sans-serif; 
   box-sizing: border-box;
   padding-left: 10px;
+  border-radius: 10px 10px 0px 0px;
 }
 
 #navtwo {
@@ -195,6 +196,17 @@ ul.menutwo li {
   border-radius: 10px;
   margin-top: 5px;
   margin-bottom: 10px;
+}
+
+/* Utilização do Article */
+
+.article {
+  width: 99%;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: #d6d5d5;
+  margin-bottom: 5px;
+  border-radius: 10px;
 }
 
 

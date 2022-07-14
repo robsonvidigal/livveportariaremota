@@ -63,7 +63,7 @@
 
 			<section id="sessao">
 				<h1>Cadastro de Usúarios</h1>
-				<hr><br><br>
+				<hr><br>
 
 				<form method="post" action="processa.php">
 					<input type="submit" value="Salvar" class="btn-post">
@@ -76,7 +76,10 @@
 					<input type="email" name="email" class="campo" maxlength="50" required><br>
 					Sexo:<br>
 					<input type="text" name="sexo" class="campo" maxlength="10" required><br>
+					Profissão:<br>
+					<input type="text" name="profissao" class="campo" maxlength="40" required>
 				</form>
+				<br><br>
 			</section>
 
 			<nav id="navtwo">
