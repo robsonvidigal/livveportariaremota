@@ -1,25 +1,6 @@
 <?php
-
-    include_once("../connect/connection.php");
-
-    //Recebendo dados da index atraves do comando POST
-    $nome = $_POST['nome'];
-    $email = $_POST['email'];
-    $sexo = $_POST['sexo'];
-
-    //Armazenando comando SQL
-    $sql = "INSERT INTO usuarios (nome, email, sexo) values ('$nome', '$email', '$sexo')";
-
-    //Salvando dados
-    $salvar = mysqli_query($conexao, $sql);
-
-    //Confirmação de cadastro ou dublicidade de cadastro (email)
-
-    $linhas = mysqli_affected_rows($conexao);
-
-    mysqli_close($conexao);
+	include_once('../funcaophp/gravar.php')
 ?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
@@ -90,9 +71,9 @@
                 <?php 
 
                     if($linhas == 1) {
-                        echo "Cadastro efetuado com sucesso!";
+                        echo "Cadastro efetuado com sucesso!<br>";
                     }else{
-                        echo "Cadastro NÃO efetuado.<br>Já existe um usuário com esté e-mail!";
+                        echo "Cadastro NÃO efetuado.<br>Já existe um usuário com esté e-mail!<br>";
                     }
 
                 ?>

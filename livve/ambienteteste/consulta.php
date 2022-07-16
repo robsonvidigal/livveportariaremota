@@ -1,14 +1,8 @@
 <?php
 
-    include_once("../connect/connection.php");
-
-    //Consulta
-    $sql = "SELECT * FROM usuarios";
-    $consulta = mysqli_query($conexao, $sql);
-    $registros = mysqli_num_rows($consulta);
+    include_once("../funcaophp/consultar.php");
 
 ?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
@@ -84,6 +78,8 @@
 
                 <?php 
 
+					echo "Resultado da pesquisa com a palavra <strong>$filtro</strong>.<br><br>";
+
                     echo "$registros registros encontrados.";
 
 					echo "<br><br>";
@@ -94,13 +90,17 @@
 						$nome = $exibirRegistros[1];
 						$email = $exibirRegistros[2];
 						$sexo = $exibirRegistros[3];
+						$profissao = $exibirRegistros[4];
+						$h_registro = $exibirRegistros[5];
 
 						echo "<article class='article'>";
 
-							echo "$id<br>";
+							echo "Código de cadastro: $id<br>";
 							echo "$nome<br>";
 							echo "$email<br>";
-							echo "$sexo";
+							echo "$sexo<br>";
+							echo "$profissao<br>";
+							echo "$h_registro";
 
 
 						echo "</article>";

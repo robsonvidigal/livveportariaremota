@@ -154,13 +154,14 @@ a:hover {
 
 #navtwo {
   width: 20%;
-  height: 500px;
+  height: 71%;
   background-color: #444;
   float: left;
-  margin-left: 10px;
+  margin-left: 75%;
   border-radius: 10px 10px 0px 0px;
   box-sizing: border-box;
   padding: 10px;
+  position: fixed;
 }
 
 ul.menutwo {

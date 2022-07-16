@@ -1,3 +1,8 @@
+<?php
+
+	include_once('../funcaophp/datetime.php');
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
@@ -78,7 +83,7 @@
 					<input type="text" name="sexo" class="campo" maxlength="10" required><br>
 					Profissão:<br>
 					<input type="text" name="profissao" class="campo" maxlength="40" required>
-				</form>
+					<input type="hidden" name="h_registro" value="<?php echo "$h_registro" ?>" >
 				<br><br>
 			</section>
 
