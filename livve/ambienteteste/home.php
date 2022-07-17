@@ -1,6 +1,6 @@
 <?php
 
-	include_once('../funcaophp/datetime.php');
+	include_once('../funcaophp/consultvisitas.php')
 
 ?>
 <!DOCTYPE html>
@@ -55,9 +55,8 @@
 					
 				<div id="showtime" class="hora">
 
-				<output id="hora"></output> -  
-				<output id="data"></output>
-        		
+				<output id="hora"></output>\ - /<output id="data"></output>
+				        		
 				</div>
 		
 			</div>
@@ -73,6 +72,7 @@
 
 			<section id="sessao">
 				<h1>Cadastro de Usúarios</h1>
+				
 				<hr><br>
 
 				<form method="post" action="processa.php">
@@ -80,10 +80,11 @@
 					<input type="reset" value="Limpar" class="btn-post">
 					<br><br>
 
-					Hora Registro:<br>
-					<input type="time" name="" class="campo" name="h_registro" disabled="disabled" maxlength="8" value="<?php echo "$h_registro" ?>"><br>
-
-
+					Hora/Data Registro: 
+					<output id="horavisivel"></output> - <output id="datavisivel"></output>
+					<input type="hidden" id="datadb" name="d_registro" class="campo" require maxlength="11" value="">
+					<input type="hidden" id="horadb" name="h_registro" class="campo" required maxlength="9" value="">
+					<input type="hidden" name="ip_registro" class="campo" required maxlength="16" value="<?php echo "$ip" ?>"><br><br>
 					Nome:<br>
 					<input type="text" name="nome" class="campo" maxlength="40" required autofocus><br>
 					E-mail:<br>
@@ -105,9 +106,10 @@
 			</nav>
 			
 		</div>
-	</div>
-		
+	</div>	
+
 	
-	<script src="../javascript/funcoes.js"></script>
+	
 </body>
+		<script src="../javascript/funcoes.js"></script>
 </html>

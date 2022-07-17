@@ -1,5 +1,5 @@
 <?php
-	include_once('../funcaophp/gravar.php')
+	include_once('../funcaophp/usuariogravar.php')
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -51,14 +51,13 @@
 			
 			<div id="relogio_menu">
 					
-				<div id="showtime" class="hora">
-
-				<output id="hora"></output> -  
-				<output id="data"></output>
-        		
+					<div id="showtime" class="hora">
+	
+					<output id="hora"></output>\ - /<output id="data"></output>
+									
+					</div>
+			
 				</div>
-		
-			</div>
 			
 		</div>	
 
@@ -97,9 +96,8 @@
 
 
 
-	</div>
-		
+	</div>	
 	
-	<script src="../javascript/funcoes.js"></script>
 </body>
+		<script src="../javascript/funcoes.js"></script>
 </html>

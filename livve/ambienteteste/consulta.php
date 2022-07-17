@@ -55,8 +55,7 @@
 					
 				<div id="showtime" class="hora">
 
-				<output id="hora"></output> -  
-				<output id="data"></output>
+				<output id="hora"></output>\ - /<output id="data"></output>
         		
 				</div>
 		
@@ -98,6 +97,8 @@
 							$sexo = $exibirRegistros[3];
 							$profissao = $exibirRegistros[4];
 							$h_registro = $exibirRegistros[5];
+							$d_registro = $exibirRegistros[6];
+							$ip_registro = $exibirRegistros[7];
 
 							echo "<article class='article'>";
 
@@ -106,7 +107,8 @@
 								echo "$email<br>";
 								echo "$sexo<br>";
 								echo "$profissao<br>";
-								echo "$h_registro";
+								echo "$h_registro / $d_registro<br>";
+								echo "Ip: $ip_registro";
 
 
 							echo "</article>";
@@ -128,8 +130,6 @@
 			</div>
 
 		</div>
-				
-	
-	<script src="../javascript/funcoes.js"></script>
 </body>
+		<script src="../javascript/funcoes.js"></script>
 </html>

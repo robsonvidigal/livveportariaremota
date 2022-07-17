@@ -8,10 +8,12 @@
     $sexo = $_POST['sexo'];
 	$profissao = $_POST['profissao'];
 	$h_registro = $_POST['h_registro'];
+    $d_registro = $_POST['d_registro'];
+    $ip_registro = $_POST['ip_registro'];
 
     //Armazenando comando SQL
-    $sql = "INSERT INTO usuarios (nome, email, sexo, profissao, h_registro) 
-            values ('$nome', '$email', '$sexo', '$profissao', '$h_registro')";
+    $sql = "INSERT INTO usuarios (nome, email, sexo, profissao, h_registro, d_registro, ip_registro) 
+            values ('$nome', '$email', '$sexo', '$profissao', '$h_registro', '$d_registro', '$ip_registro')";
 
     //Salvando dados
     $salvar = mysqli_query($conexao, $sql);
