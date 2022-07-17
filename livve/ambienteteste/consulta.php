@@ -10,8 +10,7 @@
 		<title>Boletim - Livve Portária</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="../css/estilo.css"/>
-		<script src="../javascript/jquery-1.11.2.js"></script>
-    	<script type="text/javascript" src="../javascript/datetime.js"></script>
+		<script src="../javascript/jquery-1.11.2.js"></script>		
 	</head>
 <body>
 
@@ -51,11 +50,11 @@
 			
 			</div>
 			
-			<div id="relogio_menu">
+			<div id="relogio_menu">			
 					
 				<div id="showtime" class="hora">
 
-				<output id="hora"></output>\ - /<output id="data"></output>
+				<div id="homis" class="hora" onload="showTime()"></div> 
         		
 				</div>
 		
@@ -130,6 +129,7 @@
 			</div>
 
 		</div>
-</body>
 		<script src="../javascript/funcoes.js"></script>
+		<script type="text/javascript" src="../javascript/relogio.js"></script>
+</body>
 </html>

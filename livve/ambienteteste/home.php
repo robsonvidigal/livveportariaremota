@@ -51,12 +51,12 @@
 			
 			</div>
 			
-			<div id="relogio_menu">
+			<div id="relogio_menu">			
 					
 				<div id="showtime" class="hora">
 
-				<output id="hora"></output>\ - /<output id="data"></output>
-				        		
+				<div id="homis" class="hora" onload="showTime()"></div> 
+        		
 				</div>
 		
 			</div>
@@ -112,4 +112,5 @@
 	
 </body>
 		<script src="../javascript/funcoes.js"></script>
+		<script type="text/javascript" src="../javascript/relogio.js"></script>
 </html>
