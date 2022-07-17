@@ -101,7 +101,7 @@ a:hover {
 
 /* Estrutura do relógio */
 
-#hms {
+#showtime {
   width: 98.5%;
   padding: 10px 0px 10px 0px;
   display: flex;

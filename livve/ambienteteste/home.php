@@ -8,9 +8,10 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Boletim - Livve Portária</title>
-		<link rel="stylesheet" type="text/css" href="../css/estilo.css"/>
-		<script type="text/javascript" src="../javascript/ajax.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../css/estilo.css"/>
+		<script src="../javascript/jquery-1.11.2.js"></script>
+    	<script type="text/javascript" src="../javascript/datetime.js"></script>
 	</head>
 <body>
 
@@ -51,13 +52,17 @@
 			</div>
 			
 			<div id="relogio_menu">
-				
-				<div id="hms" class="hora" onload="showTime()"></div>
+					
+				<div id="showtime" class="hora">
+
+				<output id="hora"></output> -  
+				<output id="data"></output>
+        		
+				</div>
 		
 			</div>
 			
 		</div>	
-
 	</div>
 
 	<!-- INICIO DA ESTRUTURA DO CONTEUDO GERAL -->
@@ -75,6 +80,10 @@
 					<input type="reset" value="Limpar" class="btn-post">
 					<br><br>
 
+					Hora Registro:<br>
+					<input type="time" name="" class="campo" name="h_registro" disabled="disabled" maxlength="8" value="<?php echo "$h_registro" ?>"><br>
+
+
 					Nome:<br>
 					<input type="text" name="nome" class="campo" maxlength="40" required autofocus><br>
 					E-mail:<br>
@@ -83,7 +92,8 @@
 					<input type="text" name="sexo" class="campo" maxlength="10" required><br>
 					Profissão:<br>
 					<input type="text" name="profissao" class="campo" maxlength="40" required>
-					<input type="hidden" name="h_registro" value="<?php echo "$h_registro" ?>" >
+					
+					
 				<br><br>
 			</section>
 
@@ -95,13 +105,9 @@
 			</nav>
 			
 		</div>
-
-
-
 	</div>
 		
 	
 	<script src="../javascript/funcoes.js"></script>
-	<script src="../javascript/relogio.js"></script>
 </body>
 </html>

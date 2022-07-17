@@ -8,9 +8,10 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Boletim - Livve Portária</title>
-		<link rel="stylesheet" type="text/css" href="../css/estilo.css"/>
-		<script type="text/javascript" src="../javascript/ajax.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../css/estilo.css"/>
+		<script src="../javascript/jquery-1.11.2.js"></script>
+    	<script type="text/javascript" src="../javascript/datetime.js"></script>
 	</head>
 <body>
 
@@ -51,8 +52,13 @@
 			</div>
 			
 			<div id="relogio_menu">
-				
-				<div id="hms" class="hora" onload="showTime()"></div>
+					
+				<div id="showtime" class="hora">
+
+				<output id="hora"></output> -  
+				<output id="data"></output>
+        		
+				</div>
 		
 			</div>
 			
@@ -62,71 +68,68 @@
 
 	<!-- INICIO DA ESTRUTURA DO CONTEUDO GERAL -->
 
-	<div id="conteudogeraldapagina">
-		
-		<div class="container_infor">
-
-			<section id="sessao">
-				<h1>Consultas</h1>
-				<hr><br>
-
-				<form method="get" action="">
-					Filtrar por profissão: <input type="text" name="filtro" class="campo" required autofocus>
-					<input type="submit" value="Pesquisar" class="btn-post">
-
-				</form><br>
-
-                <?php 
-
-					echo "Resultado da pesquisa com a palavra <strong>$filtro</strong>.<br><br>";
-
-                    echo "$registros registros encontrados.";
-
-					echo "<br><br>";
-
-					while($exibirRegistros = mysqli_fetch_array($consulta)){
-
-						$id = $exibirRegistros[0];
-						$nome = $exibirRegistros[1];
-						$email = $exibirRegistros[2];
-						$sexo = $exibirRegistros[3];
-						$profissao = $exibirRegistros[4];
-						$h_registro = $exibirRegistros[5];
-
-						echo "<article class='article'>";
-
-							echo "Código de cadastro: $id<br>";
-							echo "$nome<br>";
-							echo "$email<br>";
-							echo "$sexo<br>";
-							echo "$profissao<br>";
-							echo "$h_registro";
-
-
-						echo "</article>";
-
-					}
-
-					mysqli_close($conexao);
-                ?>
-				
-			</section>
-
-			<nav id="navtwo">
-				<ul class="menutwo">
-					<a href="home.php"><li>Cadastro</li></a>
-					<a href="consulta.php"><li>Consultas</li></a>
-				</ul>
-			</nav>
+		<div id="conteudogeraldapagina">
 			
+			<div class="container_infor">
+
+				<section id="sessao">
+					<h1>Consultas</h1>
+					<hr><br>
+
+					<form method="get" action="">
+						Filtrar por profissão: <input type="text" name="filtro" class="campo" required autofocus>
+						<input type="submit" value="Pesquisar" class="btn-post">
+
+					</form><br>
+
+					<?php 
+
+						echo "Resultado da pesquisa com a palavra <strong>$filtro</strong>.<br><br>";
+
+						echo "$registros registros encontrados.";
+
+						echo "<br><br>";
+
+						while($exibirRegistros = mysqli_fetch_array($consulta)){
+
+							$id = $exibirRegistros[0];
+							$nome = $exibirRegistros[1];
+							$email = $exibirRegistros[2];
+							$sexo = $exibirRegistros[3];
+							$profissao = $exibirRegistros[4];
+							$h_registro = $exibirRegistros[5];
+
+							echo "<article class='article'>";
+
+								echo "Código de cadastro: $id<br>";
+								echo "$nome<br>";
+								echo "$email<br>";
+								echo "$sexo<br>";
+								echo "$profissao<br>";
+								echo "$h_registro";
+
+
+							echo "</article>";
+
+						}
+
+						mysqli_close($conexao);
+					?>
+					
+				</section>
+
+				<nav id="navtwo">
+					<ul class="menutwo">
+						<a href="home.php"><li>Cadastro</li></a>
+						<a href="consulta.php"><li>Consultas</li></a>
+					</ul>
+				</nav>
+				
+			</div>
+
 		</div>
-
-
-
-	</div>
-		
+				
 	
 	<script src="../javascript/funcoes.js"></script>
-	<script src="../javascript/relogio.js"></script>
 </body>
 </html>

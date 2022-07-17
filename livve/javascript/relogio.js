@@ -32,8 +32,8 @@
 
 
     var time = hora + ":" + minuto + ":" + segundo + " " + session + " / " + diaNome[agora.getDay()] + ", " + agora.getDate() + " de " + mesNome[agora.getMonth()] + " de " + agora.getFullYear();
-    document.getElementById("hms").innerHTML = time;
-    document.getElementById("hms").textContent = time;
+    document.getElementById("homis").innerHTML = time;
+    document.getElementById("homis").textContent = time;
 
     setTimeout(showTime, 1000);
 

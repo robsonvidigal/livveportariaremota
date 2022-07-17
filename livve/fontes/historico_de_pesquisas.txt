@@ -11,3 +11,5 @@ Desevolvimento realizado em parceria com as fontes de pesquisas:
 //font: https://www.devmedia.com.br/date-javascript-trabalhando-com-data-e-hora-em-js/37222
 //Créditos para criação de cadastro em PHP e MySQL - data 10/07/2022
 //font: https://www.youtube.com/c/FSNCursosOnline
+//Créditos Data e Hora via jquery-1.11.2
+font: https://temptable.com.br/2015/11/exibir-data-e-hora-atual-em-html.html
